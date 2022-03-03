@@ -1,0 +1,88 @@
+body {
+    background-color: rgb(29, 28, 28);
+}
+
+main {
+    display: flex;
+    background-color: whitesmoke;
+    width: 36rem;
+    height: 30rem;
+    margin-top: 7rem;
+    margin-left: auto;
+    margin-right: auto;
+}    
+
+section {
+    width: 96%;
+    height: 96%;
+    margin: auto;
+    
+    box-shadow: 0.2rem 0.2rem 1.5rem rgb(136, 134, 134);
+    display: grid;
+    grid-template-columns: repeat (4, 1fr);
+    grid-template-rows: repeat (6, 1fr);
+    font-size: 1.6rem;
+}
+
+header {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    grid-area: 1/1/1/5;
+    background-color: rgb(26, 36, 26);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.results {
+    color: white;
+    font-size: 2rem;
+    margin-right: 1.2rem;
+}
+/* operators */
+
+.operators,
+.diviso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(163, 220, 228);
+    border-bottom-style: solid;
+    border-width:thin;
+}
+.operators {
+    border-right-style: solid;
+}
+
+/* numbers */
+
+.number,
+.lastline,
+.zero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(211, 233, 236);
+    border-right-style: solid;
+    border-width:thin;
+}
+
+.zero {
+    border-bottom-left-radius: 10px;
+}
+
+.number {
+    border-bottom-style: solid;
+    border-width:thin;
+}
+
+/* equal */
+aside {
+    font-size: 1.5rem;
+    grid-area: 3/4/7/4;
+    background-color: rgb(248, 32, 86);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: 10px;
+}
